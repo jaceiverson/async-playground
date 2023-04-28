@@ -12,7 +12,7 @@ from rich.console import Console
 def timeit(
     output: bool = True,
     rich_console: None | Console = None,
-    return_time: bool = True,
+    return_time: bool = False,
 ):
     def decorator(func):
         def wrapper(*args, **kwargs):
